@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dein Name · Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="header">
+    <a href="#" class="logo">// dev</a>
+    <nav class="nav">
+      <a href="#about">Über mich</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projekte</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Menü öffnen">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="hero-tag">Hi, ich bin</p>
+      <h1 class="hero-title">
+        <span class="line">Dein Name</span>
+      </h1>
+      <p class="hero-subtitle">Frontend Developer · UI/UX · Deine Rolle</p>
+      <p class="hero-desc">
+        Kurzer Satz über dich: Was du machst, was dich antreibt. Ersetze diesen Text mit deiner eigenen Beschreibung.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">Projekte ansehen</a>
+        <a href="#contact" class="btn btn-ghost">Kontakt</a>
+      </div>
+      <div class="hero-scroll">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <span class="section-label">01 — Über mich</span>
+        <div class="about-grid">
+          <div class="about-text">
+            <h2>Wer ich bin</h2>
+            <p>
+              Hier kommt dein längerer Text über dich: Wer du bist, was du gelernt hast, wo du arbeitest oder was du suchst. Ein bis zwei Absätze – du kannst alles beliebig anpassen.
+            </p>
+            <p>
+              Zweiter Absatz für weitere Infos, Hobbys, Tech-Stack oder Ziele. Einfach ersetzen.
+            </p>
+          </div>
+          <div class="about-meta">
+            <ul>
+              <li><strong>Ort</strong> Deine Stadt</li>
+              <li><strong>Status</strong> Verfügbar für Projekte</li>
+              <li><strong>Fokus</strong> Web, Apps, Design</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills">
+      <div class="container">
+        <span class="section-label">02 — Skills & Tools</span>
+        <h2>Technologien</h2>
+        <p class="section-intro">Mit diesen Technologien arbeite ich. Liste anpassen und erweitern.</p>
+        <div class="skills-grid">
+          <div class="skill-card"><span>HTML / CSS</span></div>
+          <div class="skill-card"><span>JavaScript</span></div>
+          <div class="skill-card"><span>React / Vue</span></div>
+          <div class="skill-card"><span>TypeScript</span></div>
+          <div class="skill-card"><span>Git</span></div>
+          <div class="skill-card"><span>Dein Tool</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="container">
+        <span class="section-label">03 — Projekte</span>
+        <h2>Ausgewählte Arbeiten</h2>
+        <p class="section-intro">Deine besten Projekte. Titel, Kurzbeschreibung und Link eintragen.</p>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-image">
+              <div class="project-placeholder">Projekt 1</div>
+            </div>
+            <div class="project-content">
+              <h3>Projektname 1</h3>
+              <p>Kurze Beschreibung: Was macht das Projekt, welche Tech, für wen.</p>
+              <a href="#" class="project-link">Ansehen →</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-image">
+              <div class="project-placeholder">Projekt 2</div>
+            </div>
+            <div class="project-content">
+              <h3>Projektname 2</h3>
+              <p>Kurze Beschreibung. Link zu Live-Demo oder Repo einfügen.</p>
+              <a href="#" class="project-link">Ansehen →</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-image">
+              <div class="project-placeholder">Projekt 3</div>
+            </div>
+            <div class="project-content">
+              <h3>Projektname 3</h3>
+              <p>Drittes Projekt – gleiche Struktur, deine Infos.</p>
+              <a href="#" class="project-link">Ansehen →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <span class="section-label">04 — Kontakt</span>
+        <h2>Schreib mir</h2>
+        <p class="section-intro">Deine E-Mail, LinkedIn, GitHub usw. eintragen.</p>
+        <div class="contact-links">
+          <a href="mailto:deine@email.de" class="contact-link">deine@email.de</a>
+          <a href="https://github.com/deinusername" target="_blank" rel="noopener" class="contact-link">GitHub</a>
+          <a href="https://linkedin.com/in/deinprofil" target="_blank" rel="noopener" class="contact-link">LinkedIn</a>
+          <a href="#" class="contact-link">Twitter / X</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Dein Name. Mit HTML, CSS & JS gebaut.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
